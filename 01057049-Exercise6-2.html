@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+            background-image:url(https://img.2animx.com/upload/img/0w/8b/868/150/1.jpg);
+            background-size: cover;
+            
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+        .family{
+            font-size: large;
+        }
+        .family:hover{
+            color: #54AFE4;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">秋本麗子</span>
+                <span class="last-name">（あきもと れいこ）</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">john.doe@gmail.com</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">111-222-3333</span>
+            </div>
+
+            <div>
+                <img src="https://imgur.dcard.tw/6AuADFUh.jpg" width="60%" >
+            </div>
+
+            <div class="about">
+                <span class="position">我的經歷 </span>
+                <span class="desc">
+                    I am a police officer with more than 3 years ,階級是巡査，制服經過允許和一般女警不同，出生於法國●巴黎15歲進入瑞士的名門女校，學校實施寄宿制度，全世界有錢的大小姐通通在此聚集，我在此學習上流社會的禮儀、教養等等，皆以最頂尖的女士為目標，都是又嚴又艱難的課程。期間，以赤小就拿手的鋼琴演奏拿到莫札特大獎，也得過歐洲點心手藝大獎，成果輝煌。
+
+                    兩年後畢業，回到法國母親身邊，17歲時，為了鞏固親事業的基礎，舉家遷回日本，接著馬上進入日本的大學。畢業之後，不顧父親事先安排好的職位，正義感強烈的麗子，選擇了警官學校，當上警察後被分配到龜有公園前派出所任職。
+                    
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">龜有公園前派出所</div>
+                            <div class="addr">龜有</div>
+                            <div class="duration">1976/9/21 ~ 2016/9/17</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">警官</div>
+                            <div class="desc">文書處理，巡邏工作，泡茶</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">shortcoming</div>
+                            <div class="addr">No</div>
+                            <div class="duration">Jan 2011 - Feb 2015</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">kkbboo</div>
+                            <div class="desc">dodobird</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">瑞士的名門女校</div>
+                            <div class="addr">日本的大學</div>
+                            <div class="duration">1976/9/21 ~ 2016/9/17</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Francisca</div>
+                            <div class="desc">joojoobobo</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Dress code</div>
+                            <div class="addr">連絡電話</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">mini skirt</div>
+                            <div class="desc">0800000000</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Personal information</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">配音</div>
+                        <div class="text">
+                            日本配音 : 森尾由美
+                            中文配音 : 林美秀
+                        </div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">身高/體重/年齡</div>
+                         <div class="text">170/56/23  <!--<a href="/login">link</a> -->
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="name">家庭成員</div>
+                         <div class="text"> 
+                            秋本飛飛丸 (父)<br>
+                            秋本佛蘭雪絲 (母)<br>
+                            秋本優 (妹)<br>
+                            安妮．魯莫安 (表妹)<br>
+                            塔尼雅．阿爾貝奴(祖母)  <br>  <a class="family" target="_blank" href="https://www.newton.com.tw/wiki/%E7%A7%8B%E6%9C%AC%E9%BA%97%E5%AD%90">My family</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            CSS</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        兩津
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
